@@ -1,0 +1,33 @@
+<mat-card class="meeting-card">
+    <mat-card-header>
+        <mat-card-title>Meeting Details</mat-card-title>
+    </mat-card-header>
+    <mat-divider></mat-divider>
+    <mat-card-content>
+        <form [formGroup]="startMeetingForm" (ngSubmit)="onSubmit()">
+            <mat-form-field appearance="outline">
+                <mat-label>Meeting Number</mat-label>
+                <input matInput placeholder="Meeting Number" formControlName="meetingNumber">
+
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Meeting PassWord</mat-label>
+                <input matInput placeholder="Meeting PassWord" formControlName="passWord">
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>User Name</mat-label>
+                <input matInput placeholder="User Name" formControlName="userName">
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>User Email</mat-label>
+                <input matInput placeholder="User Email" formControlName="userEmail">
+            </mat-form-field>
+
+            <div class="action-container">
+                <button mat-raised-button type="submit" color="primary">Join Meeting</button>
+            </div>
+        </form>
+
+    </mat-card-content>
+
+</mat-card>

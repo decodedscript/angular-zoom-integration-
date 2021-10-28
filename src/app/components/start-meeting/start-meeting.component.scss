@@ -1,0 +1,20 @@
+.meeting-card {
+    width     : 30%;
+    margin    : auto;
+    margin-top: 5%;
+
+
+    ::ng-deep {
+        mat-form-field {
+            width: 100%;
+        }
+
+        mat-card-content {
+            padding-top: 15px;
+        }
+    }
+
+    .action-container {
+        margin-top: 20px;
+    }
+}
